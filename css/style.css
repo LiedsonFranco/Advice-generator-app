@@ -19,6 +19,9 @@ body{
 main p::after, p::before{
     content: '"';
 }
+h1{
+    letter-spacing: 4px;
+}
 .bg-neon-green{
     background-color: var(--neon-green);
 }
