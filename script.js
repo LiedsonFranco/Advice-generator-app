@@ -16,9 +16,9 @@ function typing_effect(tag, data){
 }
 
 async function get_advice(){
-    console.log('click')
     let quote = document.getElementById('quote')
     let heading = document.getElementsByTagName('h1')[0]
+    heading.innerHTML = 'WAIT'
     wait_interval = wait_response(quote)
     await fetch('https://api.adviceslip.com/advice')
     .then(res => res.json())
